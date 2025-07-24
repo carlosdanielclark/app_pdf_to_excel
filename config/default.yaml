@@ -1,0 +1,51 @@
+# Configuración del sistema PDF/Word to Excel Converter
+app:
+  name: "PDF/Word to Excel Converter"
+  version: "1.0.0"
+  environment: "development"
+
+paths:
+  input_dir: "./input"
+  output_dir: "./output"
+  temp_dir: "./temp"
+  logs_dir: "./logs"
+
+processing:
+  ocr_enabled: true
+  ocr_language: "spa"
+  max_file_size_mb: 50
+  supported_formats: ["pdf", "docx", "doc"]
+  table_detection_threshold: 0.7
+
+normalization:
+  remove_empty_rows: true
+  remove_empty_columns: true
+  handle_merged_cells: true
+  standardize_encoding: true
+  max_columns: 50
+
+excel:
+  include_header: true
+  auto_adjust_width: true
+  number_format: "#,##0.00"
+  date_format: "yyyy-mm-dd"
+  default_sheet_name: "Tabla_Extraida"
+
+logging:
+  level: "INFO"
+  format: "json"
+  rotation: "1 week"
+  retention: "4 weeks"
+  max_size: "10 MB"
+
+streamlit:
+  title: "Convertidor PDF/Word a Excel"
+  icon: "📊"
+  layout: "wide"
+  theme: "light"
+  max_upload_size: 200  # MB
+
+security:
+  allowed_extensions: [".pdf", ".docx", ".doc"]
+  scan_uploads: true
+  sanitize_filenames: true

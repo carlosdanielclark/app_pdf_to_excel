@@ -1,0 +1,73 @@
+# Entorno virtual
+venv/
+.env/
+.venv/
+
+# Archivos de configuración de IDEs y editores
+scode/
+.idea/
+*.code-workspace
+
+# Archivos compilados e intérprete
+pycache/
+*.py[cod]
+*$py.class
+
+# Directorios generados en tiempo de ejecución
+input/
+output/
+temp/
+logs/
+
+# Configuraciones de Streamlit guardadas
+.streamlit/
+
+# Archivos de configuración de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Dependencias y lockfiles (usar pip install -r requirements.txt)
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Cachés de Python
+*.egg-info/
+.eggs/
+
+# Archivos de prueba y cobertura
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Bases de datos y archivos locales de ejemplo
+*.db
+*.sqlite3
+
+# Archivos de salida de Excel generados
+*.xlsx
+
+# Tesseract OCR temporary files (si los hubiera)
+*.tif
+*.png
+*.jpg
+
+# Logs de aplicaciones
+*.log
+
+# Archivos de configuración sensible
+config/.secret.yaml
+config/.key.yaml
+
+# Archivos de compilación y despliegue
+build/
+dist/
+docs/_build/
+
+# Otros
+*.swp
+*~
