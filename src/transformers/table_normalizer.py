@@ -104,7 +104,7 @@ class TableNormalizer:
             while h in dedup:
                 h = f"{base}_{i}"
                 i += 1
-            dedup.append(h) 
+            dedup.append(h)
         return dedup
 
     def _detect_column_type(self, col: pd.Series) -> str:
